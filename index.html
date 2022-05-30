@@ -25,11 +25,12 @@ body{
 }
 
 #button {
-    width: 25%;
-    height: 10%;
+    width: 30%;
+    height: 20%;
     border-radius: 8px;
     background-color: #E3E3E3;
-    margin-left: 5%;
+    margin-left: 20px;
+    padding: 10px;
 
 }
 
@@ -74,6 +75,40 @@ h1 {
     margin-right: 50px;
 }
 
+#resume {
+    float: right;
+    margin-top: 140px;
+    margin-right: 45px;
+
+}
+
+.typed-out{
+      overflow: hidden;
+      border-right: .15em solid black;
+      white-space: nowrap;
+      animation: 
+      typing 3s steps(10, end) forwards;
+      font-size: 20px;
+      width: 0;
+    }
+
+    .typed-out2{
+      overflow: hidden;
+      border-right: .15em solid black;
+      white-space: nowrap;
+      animation: 
+      typing 3s steps(10, end) forwards;
+      font-size: 20px;
+      width: 0;
+      animation-delay: 3s;
+    }
+
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
 </style>
 <body>
 
@@ -81,9 +116,11 @@ h1 {
     <span id = "pic"><img src = "codingPic.PNG" alt = "Picture of Color Clutch app" width = 120px height = 120px> </span>
 
 <h1> <center> Aditi Dam </center> </h1>
-<p> <center> I am majoring in computer science and minoring in entrepreneurship at Columbia University in the City of New York.  <br> </center> <center> I am very passionate about solving problems and conceptualizing solutions through coding. </center> </p>
+<div class = "typed-out"> <center> I am majoring in computer science and minoring in entrepreneurship at Columbia University in the City of New York. </center> </div>
+<div class = "typed-out2"> <center> I am very passionate about solving problems and conceptualizing solutions through coding. </center> </div> 
+
 <div id = "links">
-<span> <a href="resume" id ="button"> Resume</a> </span>
+<span id = "resume"> <a href="resume" id ="button"> RESUME </a> </span>
 </div>
 </div>
 
