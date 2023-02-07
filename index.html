@@ -25,41 +25,33 @@ body{
     margin-top: -3%;
 }
 
+.project{
+    text-align: center;
+    border-color: #E3E3E3;
+    color: white;
+    height: 200px;
+    width: 500px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    border-style: solid;
+    padding: 20px;
+
+}
+
 #button {
     width: 30%;
     height: 20%;
     border-radius: 8px;
     background-color: #E3E3E3;
-    margin-left: 20px;
+    margin: 0px 0px 50px 20px;
     padding: 10px;
-
 }
 
-#top {
-    background-color: #FDDAFF;
-    width: 25%;
-    height: 50%;
-    border-radius: 5px;
-    border-style:outset;
-    float: left;
-    margin: 8% 3% 5% 3%;
-    text-align:center;
-   
-}
-
-#bottom {
-    background-color:#FDDAFF;
-    width: 25%;
-    height: 50%;
-    border-radius: 5px;
-    border-style:outset;
-    float: left;
-    margin: 5% 3% 5% 3%;
-    text-align:center;
-}
 
 #container {
     margin-top: -100px;
+    align-items: center;
 }
 
 h3 {
@@ -83,6 +75,12 @@ h1 {
 
 }
 
+a {
+    text-decoration: none;
+    color: magenta;
+}
+
+
 .typed-out{
       overflow: hidden;
       border-right: .10em solid black;
@@ -92,8 +90,6 @@ h1 {
       font-size: 20px;
       width: 0;
     }
-
-
 
     @keyframes typing {
       from { width: 0 }
@@ -107,7 +103,7 @@ h1 {
     <span id = "pic"> <img src = "codingPic.png" alt = "Picture of Color Clutch app" width = 120px height = 120px> </span>
 
 <div class = "typed-out"> <h1> <center> Hi! I'm Aditi Dam </center> </h1> </div>
-<p><center> I am majoring in computer science and minoring in entrepreneurship at Columbia University in the City of New York. </center> </p>
+<p><center> I majored in computer science and minored in entrepreneurship at Columbia University in the City of New York. </center> </p>
 <p><center> I am very passionate about solving problems and conceptualizing solutions through coding. </center> </p>
 
 <div id = "links">
@@ -115,59 +111,88 @@ h1 {
 </div>
 </div>
 
-<h3> <center> My Projects </center> </h3>
 <div id = "container">
-    <div id = "top">
-        <h2> Color Clutch </h2>
-        <img src = "ColorClutch.PNG" alt = "Picture of Color Clutch app" width = 35% height = 70%>
+    <h3> <center> My Hackathons </center> </h3>
+    <div class = "project"> 
+        <a href="https://devpost.com/software/mycarbon-kve83n" id ="button"> MyCarbon </a>
+        <p> Black Wings Hackathon '23 </p> 
+        <p> Awards: First Place Winner </p> 
+        <p> Tech Used: React Native, Expo, Firebase, Github, Figma </p>
     </div>
 
-    <div id = "top">
-        <h2> Cube Catcher! </h2>
-        <img src = "CubeCatcher.PNG" alt = "Picture of Color Clutch app" width = 35% height = 70%>
+    <div class = "project"> 
+        <a href="https://devpost.com/software/vaccination-volunteers" id ="button"> Vaccination Volunteers </a> 
+        <p> Devfest Hackathon '21 </p> 
+        <p> Awards: First Place Winner </p> 
+        <p> Tech Used: Firebase, Python, SQL, HTML/CSS </p>
     </div>
 
-    <div id = "top">
-        <h2> Dinder </h2>
-        <img src = "Dinder.png" alt = "Picture of Dinder website" width = 90% height = 60%>
+    <div class = "project">
+        <a href="https://devpost.com/software/pantrydial" id ="button"> Pantry Dial </a>
+        <p> Devfest Hackathon '20 </p> 
+        <p> Awards: Best Hack for Social Good </p> 
+        <p> Tech Used: Firebase, Expo, React Native </p>
     </div>
 
-    <div id = "bottom">
-        <h2> Nice2CU </h2>
-        <img src = "Nice2CU.png" alt = "Picture of Nice2CU webapp" width = 50% height = 79%>
+
+    <h3> <center> App Development </center> </h3>
+    <div class = "project"> 
+        <a href="https://apps.apple.com/us/app/color-clutch/id1519060963" id ="button"> Color Clutch </a> 
+        <p> Tech Used: Swift, Firebase, Xcode, Github </p>
     </div>
 
-    <div id = "bottom">
-        <h2> Vaccination Volunteers </h2>
-        <img src = "VaccinationVolunteers.png" alt = "Picture of Vaccination Volunteers website" width = 90% height = 60%>
+    <div class = "project"> 
+        <a href="https://apps.apple.com/us/app/cube-catcher/id1480925102" id ="button"> Cube Catcher! </a> 
+        <p> Tech Used: Swift, Firebase, Xcode, Github </p> 
     </div>
 
-    <div id = "bottom">
-        <h2> Robotics Studio </h2>
-        <img src = "robot.png" alt = "Picture of robot" width = 35% height = 70%>
+    <h3> <center> Course Projects </center> </h3>
+    <div class = "project"> 
+        <a href="https://github.com/vanessa-vasquez/alma/tree/FinalProduct" id ="button"> Alma </a> 
+        <p> Course: Software As a Service</p> 
+        <p> Tech Used: Ruby, Cucumber, RSpec, Figma, Github </p> 
     </div>
 
-    <div id = "top">
-        <h2> Pantry Dial </h2>
-        <img src = "PantryDial.png" alt = "Picture of Pantry Dial app" width = 40% height = 70%>
+    <div class = "project"> 
+        <a href="https://github.com/ad3707/advancedSWE" id ="button"> Questionnaire API </a> 
+        <p> Course: Advanced Software Engineering </p> 
+        <p> Tech Used: Java, JUnit, H2 database, Postman API, Spring Framework, Maven, SonarCloud, Github Continuous Integration </p> 
     </div>
 
-    <div id = "top">
-        <h2> Hacking For Defense </h2>
-        <img src = "" alt = "Picture of Drone detection system" width = 40% height = 70%>
+    <div class = "project"> 
+        <a href="https://docs.google.com/presentation/d/1u1sSfDqbRfBOr8Dh4pyct9ZYRFEGfxAZilRn1u2C4aQ/edit" id ="button"> Walking Robot </a>
+        <p> Course: Robotics Studio </p>  
+        <p> Tech Used: Python, Raspberry Pi</p> 
+    </div>
+    
+    <div class = "project"> 
+        <a href="https://github.com/ad3707/w4111-proj1" id ="button"> Dinder </a> 
+        <p> Course: Introduction to Databases </p> 
+        <p> Tech Used: Python, SQL, PostgreSQL, Jinja, Flask, HTML/CSS </p> 
     </div>
 
-    <div id = "top">
-        <h2> Advanced Database Systems </h2>
-        <img src = "" alt = "Picture of database systems" width = 40% height = 70%>
+    <div class = "project"> 
+        <a href="https://github.com/shivanipatel16/database-systems-proj3" id ="button"> Extracting Association Rules</a> 
+        <p> Course: Advanced Database System </p> 
+        <p> Tech Used: Python, Apriori algorithm </p> 
     </div>
 
-</div>
+    <div class = "project"> 
+        <a href="https://github.com/ad3707/Information-retrieval-query-expansion" id ="button"> Information Retrieval System </a> 
+        <p> Course: Advanced Database System </p> 
+        <p> Tech Used: Python, Rocchio's algorithm, Google Custom Search API, Google Cloud  </p> 
+    </div>
 
+    <div class = "project"> 
+        <a href="https://github.com/ad3707/DigitalGameDesignFinalProject" id ="button"> Spy Quest </a> 
+        <p> Course: Digital Game Design </p> 
+        <p> Tech Used: Unity, C#, Figma </p> 
+    </div>
 
+    <div class = "project"> 
+        <a href="https://github.com/ad3707/UIDesignNice2CU" id ="button"> Nice2CU </a> 
+        <p> Course: UI Design </p> 
+        <p> Tech Used: Figma, Javascript, HTML/CSS </p> 
+    </div>
 </body>
-
-
-
-
 </html>
